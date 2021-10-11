@@ -15,7 +15,7 @@ const TopBar = () => {
                     <ul>
                     {
                         res&& res.list.map(item=>(
-                            <li><a href={item.link}>{item.name}</a></li>
+                            <li key={item.id}><a href={item.link}>{item.name}</a></li>
                         ))
                     }
                     </ul>
@@ -34,7 +34,7 @@ const TopBar = () => {
                     <nav className="second-navbar">
                         <ul>
                           {res&&res.category.map(item=>(
-                              <li><a href={item.link}>{item.name}</a></li>
+                              <li key={item.id}><a href={item.link}>{item.name}</a></li>
                           ))}
                             <li><input type="search" id="search-bar" placeholder="search" /></li>
                         </ul>

@@ -1,18 +1,60 @@
 {
     "topbar" :{
        "list": [ 
-        {"name" : "Home" , "link" : "/"} ,
-        {"name" : "Blog" , "link" : "/Blog"} , 
-        {"name" : "Contact Us" , "link" : "/Contact"} ,
-        {"name" : "FAQ's" , "link" : "/FAQ"} 
+        {"name" : "Home" , "link" : "/" ,"id":1} ,
+        {"name" : "Blog" , "link" : "/Blog","id":2} , 
+        {"name" : "Contact Us" , "link" : "/Contact","id":3} ,
+        {"name" : "FAQ's" , "link" : "/FAQ","id":4} 
         ] ,
         "category" : [
-            {"name" : "All" , "link" : "/"} ,
-            {"name" : "Featured" , "link" : "/cat/Featured"} , 
-            {"name" : "Popular" , "link" : "/cat/Popular"} ,
-            {"name" : "World" , "link" : "/cat/World"} ,
-            {"name" : "Bussiness" , "link" : "/cat/Bussiness"} , 
-            {"name" : "Technology" , "link" : "/cat/Technology"}
+            {"name" : "All" , "link" : "/","id":1} ,
+            {"name" : "Featured" , "link" : "/cat/Featured","id":2} , 
+            {"name" : "Popular" , "link" : "/cat/Popular","id":3} ,
+            {"name" : "World" , "link" : "/cat/World","id":4} ,
+            {"name" : "Bussiness" , "link" : "/cat/Bussiness","id":5} , 
+            {"name" : "Technology" , "link" : "/cat/Technology","id":6}
         ]
-    } 
+    } ,
+    "blogs" :[
+        {
+            "id" : 1,
+            "title" : "hello world" ,
+            "date" : "NOV 27,2020" ,
+            "author" : "James Pat" ,
+            "category" : "Featured" ,
+            "views" : 2,
+            "img" : "https://via.placeholder.com/900x700",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
+        } ,
+        {
+            "id" : 2,
+            "title" : "hello world" ,
+            "date" : "NOV 27,2020" ,
+            "author" : "James Pat" ,
+            "category" : "Featured" ,
+            "views" : 2,
+            "img" : "https://via.placeholder.com/900x700",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
+        } ,
+        {
+            "id" : 3,
+            "title" : "hello world" ,
+            "date" : "NOV 27,2020" ,
+            "author" : "James Pat" ,
+            "category" : "Featured" ,
+            "views" : 2,
+            "img" : "https://via.placeholder.com/900x700",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
+        } ,
+        {
+            "id" : 4,
+            "title" : "hello world" ,
+            "date" : "NOV 27,2020" ,
+            "author" : "James Pat" ,
+            "category" : "Featured" ,
+            "views" : 2,
+            "img" : "https://via.placeholder.com/900x700",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
+        } 
+    ]
 }
