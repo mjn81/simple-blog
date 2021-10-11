@@ -1,5 +1,18 @@
 {
-
-
-
+    "topbar" :{
+       "list": [ 
+        {"name" : "Home" , "link" : "/"} ,
+        {"name" : "Blog" , "link" : "/Blog"} , 
+        {"name" : "Contact Us" , "link" : "/Contact"} ,
+        {"name" : "FAQ's" , "link" : "/FAQ"} 
+        ] ,
+        "category" : [
+            {"name" : "All" , "link" : "/"} ,
+            {"name" : "Featured" , "link" : "/cat/Featured"} , 
+            {"name" : "Popular" , "link" : "/cat/Popular"} ,
+            {"name" : "World" , "link" : "/cat/World"} ,
+            {"name" : "Bussiness" , "link" : "/cat/Bussiness"} , 
+            {"name" : "Technology" , "link" : "/cat/Technology"}
+        ]
+    } 
 }
