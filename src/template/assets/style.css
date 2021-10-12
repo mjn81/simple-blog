@@ -240,6 +240,7 @@ textarea:focus {
 .tmp-body .blog-list .side-area .side-list .tmp-post .thumbnail {
   margin: 0 10px 0 0;
   max-height: 125px;
+  max-width: 250px;
 }
 .tmp-body .blog-list .side-area .side-list .tmp-post .thumbnail .cat-tag {
   top: 75%;
@@ -273,7 +274,7 @@ textarea:focus {
 }
 .tmp-post .thumbnail .cat-tag {
   position: absolute;
-  top: 90%;
+  top: 93%;
   left: 3%;
   padding: 5px 10px;
   border-radius: 20px;
@@ -337,7 +338,8 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
 }
-.tmp-footer a {
+.tmp-footer .footer-inf > * {
+  display: inline-block;
   text-decoration: none;
   color: #757575;
   margin-left: 10px;

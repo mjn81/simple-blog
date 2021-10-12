@@ -17,21 +17,11 @@
     } ,
     "blogs" :[
         {
-            "id" : 1,
+            "id" : 4,
             "title" : "hello world" ,
-            "date" : "NOV 27,2020" ,
+            "date" : "NOV 27,2021" ,
             "author" : "James Pat" ,
-            "category" : "Featured" ,
-            "views" : 2,
-            "img" : "https://via.placeholder.com/900x700",
-            "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
-        } ,
-        {
-            "id" : 2,
-            "title" : "hello world" ,
-            "date" : "NOV 27,2020" ,
-            "author" : "James Pat" ,
-            "category" : "Featured" ,
+            "category" : "Popular" ,
             "views" : 2,
             "img" : "https://via.placeholder.com/900x700",
             "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
@@ -47,9 +37,19 @@
             "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
         } ,
         {
-            "id" : 4,
+            "id" : 2,
             "title" : "hello world" ,
-            "date" : "NOV 27,2020" ,
+            "date" : "NOV 27,2019" ,
+            "author" : "James Pat" ,
+            "category" : "Popular" ,
+            "views" : 2,
+            "img" : "https://via.placeholder.com/900x700",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?"
+        } ,
+        {
+            "id" : 1,
+            "title" : "hello world" ,
+            "date" : "NOV 27,2018" ,
             "author" : "James Pat" ,
             "category" : "Featured" ,
             "views" : 2,

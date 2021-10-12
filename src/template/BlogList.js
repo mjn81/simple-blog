@@ -1,6 +1,7 @@
 import Blog from "./Blog";
-const BlogList = ({blogs , recent}) => {
-    const newBlog = blogs.reverse;
+const BlogList = ({blogs}) => {
+    const recent = blogs.at(0);
+    let revblogs = blogs.filter(item =>item.id !== recent.id);
     return ( 
         <section className="recent-post"> 
             <h1 className="sec-title">most recent</h1>
@@ -9,8 +10,8 @@ const BlogList = ({blogs , recent}) => {
 
             <section className="posts">
                {
-                   blogs.map(blog=>(
-                       <Blog blog={newBlog} />
+                   revblogs.map(blog=>(
+                       <Blog blog={blog} />
                    ))
                }
             </section>

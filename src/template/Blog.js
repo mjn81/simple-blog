@@ -1,6 +1,6 @@
 const Blog = ({blog}) => {
     return (
-        <article className="tmp-post">
+        <article className="tmp-post" key={blog.id}>
             <header>
                 <div className="thumbnail">
                     <img src={blog.img} alt={blog.id} />
