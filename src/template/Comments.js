@@ -9,7 +9,8 @@ const Comments = ({comments , id}) => {
                 <textarea name="text-comment" rows="8" placeholder="Comment"></textarea>
             </div>
             <div class="right-sec">
-                <input type="text" name="name" placeholder="Name *" required /><input type="email" name="email" placeholder="Email *" required /><button class="btn">Post Reply</button>
+                <input type="text" name="name" placeholder="Name *" required /><input type="email" name="email" placeholder="Email *" required />
+                <button class="btn" onClick={ }>Post Reply</button>
             </div>
         </section>
         <section class="comment-list">
