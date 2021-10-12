@@ -4,6 +4,8 @@ import useFetch from "./useFetch";
 
 
 const TopBar = () => {
+
+
     const res= useFetch('http://localhost:2020/topbar');
     return (  
         <div>
@@ -34,7 +36,7 @@ const TopBar = () => {
                     <nav className="second-navbar">
                         <ul>
                           {res&&res.category.map(item=>(
-                              <li key={item.id}><a href={item.link}>{item.name}</a></li>
+                              <li key={item.id} data-tag={item.name}><a href={item.link}>{item.name}</a></li>
                           ))}
                             <li><input type="search" id="search-bar" placeholder="search" /></li>
                         </ul>

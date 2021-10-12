@@ -16,7 +16,7 @@ const BlogList = ({blogs}) => {
                }
             </section>
             
-            <a className="btn btn-m-0">Load More</a>
+            <button className="btn btn-m-0">Load More</button>
         </section>
      );
 }

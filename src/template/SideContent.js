@@ -6,15 +6,18 @@ const SideContent = ({blogs}) => {
     return ( 
         
         <section className="side-area">
-                <section className="featured-area">
-                        <h1 className="sec-title">featured</h1>
-                        <ul className="side-list">
-                           {featpost.map(post=>(
-                            <SidePost post={post} />
-                           ))}
-                        </ul>
-                </section>  
-
+            {featpost.length!==0&& 
+            (<section className="featured-area">
+                <h1 className="sec-title">featured</h1>
+                <ul className="side-list">
+                    {featpost.map(post=>(
+                        <SidePost post={post} />
+                    ))}
+                </ul>
+            </section>  
+            )}
+                
+            {popost.length!==0&&( 
                 <section className="featured-area">
                     <h1 className="sec-title">popular</h1>
                     <ul className="side-list">
@@ -23,6 +26,7 @@ const SideContent = ({blogs}) => {
                            ))}
                     </ul>
                 </section>
+            )}
 
         </section>
      );

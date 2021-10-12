@@ -2,12 +2,11 @@
     "topbar" :{
        "list": [ 
         {"name" : "Home" , "link" : "/" ,"id":1} ,
-        {"name" : "Blog" , "link" : "/Blog","id":2} , 
-        {"name" : "Contact Us" , "link" : "/Contact","id":3} ,
-        {"name" : "FAQ's" , "link" : "/FAQ","id":4} 
+        {"name" : "Blog" , "link" : "/cat/All","id":2} ,
+        {"name" : "FAQ's" , "link" : "/FAQ","id":3} 
         ] ,
         "category" : [
-            {"name" : "All" , "link" : "/","id":1} ,
+            {"name" : "All" , "link" : "/cat/All","id":1} ,
             {"name" : "Featured" , "link" : "/cat/Featured","id":2} , 
             {"name" : "Popular" , "link" : "/cat/Popular","id":3} ,
             {"name" : "World" , "link" : "/cat/World","id":4} ,
@@ -32,7 +31,7 @@
             "title" : "hello world" ,
             "date" : "NOV 27,2020" ,
             "authorId" : 1 ,
-            "category" : "Featured" ,
+            "category" : "World" ,
             "views" : 2,
             "img" : "https://via.placeholder.com/900x700",
             "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?",
@@ -43,7 +42,7 @@
             "title" : "hello world" ,
             "date" : "NOV 27,2019" ,
             "authorId" : 2 ,
-            "category" : "Popular" ,
+            "category" : "Featured" ,
             "views" : 2,
             "img" : "https://via.placeholder.com/900x700",
             "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?",
@@ -54,7 +53,7 @@
             "title" : "hello world" ,
             "date" : "NOV 27,2018" ,
             "authorId" : 1 ,
-            "category" : "Featured" ,
+            "category" : "Popular" ,
             "views" : 2,
             "img" : "https://via.placeholder.com/900x700",
             "summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto alias perspiciatis laborum eaque! Totam doloremque doloribus voluptatem odit facere consequuntur, modi cumque laborum dolores accusantium quisquam maxime quidem? Autem? Placeat illo magnam minus tempora perspiciatis?",
@@ -116,6 +115,10 @@
             "author" : "John Convey" , 
             "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque amet nemo quisquam fugiat voluptates. Mollitia, exercitationem. Quia eaque repellat unde totam! Aliquid doloremque placeat deserunt, nihil distinctio perspiciatis. Deserunt?                         Optio reprehenderit odit ea beatae provident laudantium sed quae voluptatem sit corrupti sint, architecto eveniet, ipsa facere harum excepturi dolore repellendus quos molestias exercitationem mollitia accusamus? Architecto at officia labore!                         Quia explicabo saepe quas laboriosam possimus harum reiciendis nobis iste similique voluptas aspernatur quae, quam non vitae nisi commodi tenetur placeat exercitationem ratione vel fuga animi. Facilis quidem officiis vel!                         Vel ab delectus aut, ea vitae officia laudantium et sapiente assumenda distinctio ipsum omnis perspiciatis impedit reiciendis blanditiis eos architecto ducimus nemo ullam quasi tenetur optio animi quisquam ut! Repellendus!                         Fugiat tempore vitae incidunt fugit, consectetur obcaecati dignissimos, est adipisci voluptatibus quis blanditiis, iure commodi labore. Ipsa reiciendis, explicabo quis, et dolorem labore asperiores a similique rerum totam magnam blanditiis.                         Ab velit totam quibusdam repellendus assumenda debitis rem dignissimos, ipsa, perspiciatis earum odio fugiat praesentium inventore magni? Quibusdam maxime numquam incidunt ullam cupiditate doloribus assumenda. Nemo eos quas ex nobis.                         Quisquam laborum numquam cumque itaque accusantium error necessitatibus, praesentium ullam suscipit reprehenderit minima asperiores esse, nobis natus eveniet qui, similique veniam. Veritatis vero maiores repudiandae molestiae corrupti, at cumque unde!                         Blanditiis cumque, qui accusantium nihil perferendis id veniam eaque porro neque, ab tenetur iure. Debitis quibusdam dolorem consequuntur numquam beatae adipisci veritatis vitae alias blanditiis autem, maxime, sint, labore perferendis? "        
         } 
-    ]
+    ],
+    "faqs" :{
+        "text" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque amet nemo quisquam fugiat voluptates. Mollitia, exercitationem. Quia eaque repellat unde totam! Aliquid doloremque placeat deserunt, nihil distinctio perspiciatis. Deserunt?                         Optio reprehenderit odit ea beatae provident laudantium sed quae voluptatem sit corrupti sint, architecto eveniet, ipsa facere harum excepturi dolore repellendus quos molestias exercitationem mollitia accusamus? Architecto at officia labore!                         Quia explicabo saepe quas laboriosam possimus harum reiciendis nobis iste similique voluptas aspernatur quae, quam non vitae nisi commodi tenetur placeat exercitationem ratione vel fuga animi. Facilis quidem officiis vel!                         Vel ab delectus aut, ea vitae officia laudantium et sapiente assumenda distinctio ipsum omnis perspiciatis impedit reiciendis blanditiis eos architecto ducimus nemo ullam quasi tenetur optio animi quisquam ut! Repellendus!                         Fugiat tempore vitae incidunt fugit, consectetur obcaecati dignissimos, est adipisci voluptatibus quis blanditiis, iure commodi labore. Ipsa reiciendis, explicabo quis, et dolorem labore asperiores a similique rerum totam magnam blanditiis.                         Ab velit totam quibusdam repellendus assumenda debitis rem dignissimos, ipsa, perspiciatis earum odio fugiat praesentium inventore magni? Quibusdam maxime numquam incidunt ullam cupiditate doloribus assumenda. Nemo eos quas ex nobis.                         Quisquam laborum numquam cumque itaque accusantium error necessitatibus, praesentium ullam suscipit reprehenderit minima asperiores esse, nobis natus eveniet qui, similique veniam. Veritatis vero maiores repudiandae molestiae corrupti, at cumque unde!                         Blanditiis cumque, qui accusantium nihil perferendis id veniam eaque porro neque, ab tenetur iure. Debitis quibusdam dolorem consequuntur numquam beatae adipisci veritatis vitae alias blanditiis autem, maxime, sint, labore perferendis?                         Ut voluptas recusandae incidunt tempore eius hic harum aspernatur, eum itaque error officia sequi voluptate ratione officiis laudantium perspiciatis nemo nostrum, assumenda illo voluptatum? Dolores tenetur natus expedita vero cupiditate!                         Quo ipsam ad ipsum fugit voluptatem nam, soluta repellendus nostrum aliquam totam quae quidem tempora ut suscipit placeat labore, incidunt, quaerat ex molestias porro! Praesentium atque ea quis animi est.                         Temporibus officiis dolores repellendus magnam perspiciatis illo, a qui delectus quod aliquid inventore blanditiis earum! Perferendis dignissimos quidem voluptatum a, praesentium cumque maiores, rerum animi vel expedita maxime laudantium dicta?                         Magnam fugiat ullam consequuntur nihil cumque mollitia doloribus! Dolorem natus veniam deleniti quos dolorum itaque, dignissimos dicta mollitia ad placeat delectus necessitatibus animi sequi suscipit quo temporibus vero perferendis explicabo!"
+    }
+        
 
 }
