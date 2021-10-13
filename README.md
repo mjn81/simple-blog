@@ -1,6 +1,6 @@
 # Simple Blog With React
 a simple blog made using React
-
+#### Thanks to Pasindu Madushan for his Beautiful Design ( Only tired to implement what was on Behance 😃)
 ## UsedTechs
 - React
 - Html5
