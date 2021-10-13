@@ -1,7 +1,8 @@
 import Comment from './Comment';
 import { useCallback, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 const postReply = async(data )=>{
-   
+    
     await fetch('http://localhost:2020/comments' , 
     {
         method:'POST' ,
@@ -17,6 +18,7 @@ const postReply = async(data )=>{
 
 
 const Comments = ({comments , id}) => {
+    const history = useHistory();
     const [text , setText] = useState("");
     const [author , setAuthor] = useState("");
     const [email , setEmail] = useState("");
@@ -37,7 +39,7 @@ const Comments = ({comments , id}) => {
                 <button class="btn" onClick={ ()=>{
                     postReply({text  , author , email  , title, postId:id})
                     .then(()=>{
-                       // TODO : add a Hook to make it refresh
+                      history.go(0);
                     })
                     }
                 }>Post Reply</button>
