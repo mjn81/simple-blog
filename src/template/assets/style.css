@@ -513,3 +513,8 @@ textarea:focus {
   font-size: 1.1em;
   text-align: left;
 }
+
+.error {
+  margin: 50px auto;
+  text-align: center;
+}

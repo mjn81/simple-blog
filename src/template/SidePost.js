@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SidePost = ({post}) => {
     return ( 
         <li key={post.id}>
@@ -12,7 +14,7 @@ const SidePost = ({post}) => {
                 <h1 className="title">{post.title}</h1>
                 <h3 className="date">{post.date}</h3>
                 <footer className="footer">
-                    <a href={`/blogs/${post.id}`}>Read Article &#8594;</a>
+                    <Link to={`/blogs/${post.id}`}>Read Article &#8594;</Link>
                 </footer>
             </section>  
         </article>

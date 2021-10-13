@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Blog = ({blog}) => {
     return (
         <article className="tmp-post" key={blog.id}>
@@ -17,7 +18,7 @@ const Blog = ({blog}) => {
                 </p>
             </section>
             <footer className="footer">
-                <a href={`/blogs/${blog.id}`}>Read Article &#8594;</a>
+                <Link to={`/blogs/${blog.id}`}>Read Article &#8594;</Link>
             </footer>
             
      </article>

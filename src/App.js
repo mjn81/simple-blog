@@ -6,6 +6,7 @@ import TopBar from './template/TopBar';
 import Post from './template/Post';
 import Category from './template/Category';
 import Faq from './template/Faq';
+import NotFound from './template/404';
 import {BrowserRouter as Router, Route , Switch  } from 'react-router-dom';
 
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/blogs/:id"><Post /></Route>
           <Route path="/cat/:tag"><Category /></Route>
           <Route path="/FAQ"><Faq /></Route>
-
+          <Route path="*"><NotFound /></Route>
         </Switch>
         <Footer />
       </div>

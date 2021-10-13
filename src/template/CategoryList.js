@@ -1,13 +1,26 @@
 import { useParams } from "react-router";
 import { useEffect } from "react";
 import Blog from './Blog';
-import {navClick} from 'ClickFunction';
+
+const navClicked = (tag)=>{
+    const list = document.querySelector('.tmp-category .second-navbar ul').childNodes;
+    list.forEach(item => {
+        if(item.classList.contains('active')){
+            item.classList.remove('active');
+        }
+        if(item.dataset.tag == tag){
+           item.classList.add('active'); 
+        }
+    })
+}
+
 
 
 const CategoryList = ({blogs}) => {
     const {tag} = useParams();
-    const filtered= (tag=="All") ? blogs : blogs.filter(item=>item.category == tag);
-    useEffect(()=>{setTimeout(()=>{navClicked(tag);} ,10)} , [tag]); // change the type of hook
+    const filtered= (tag=="All") ? [...blogs] : blogs.filter(item=>item.category == tag);
+    filtered.reverse();
+    useEffect(()=>{navClicked(tag);} , [tag]); // change the type of hook
 
     return ( 
         <section className="blog-list">

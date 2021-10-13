@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 
 
@@ -17,7 +18,7 @@ const TopBar = () => {
                     <ul>
                     {
                         res&& res.list.map(item=>(
-                            <li key={item.id}><a href={item.link}>{item.name}</a></li>
+                            <li key={item.id}><Link to={item.link}>{item.name}</Link></li>
                         ))
                     }
                     </ul>
@@ -26,8 +27,8 @@ const TopBar = () => {
 
                 </div>
                 <div className="tmp-side-nav">
-                    <a className="btn btn-rev" href="/Login">Log in</a>
-                    <a className="btn" href="/SignUp">Sign Up</a>
+                    <Link className="btn btn-rev" to="/Login">Log in</Link>
+                    <Link className="btn" href="/SignUp">Sign Up</Link>
                 </div>  
             </header>  
 
@@ -36,7 +37,7 @@ const TopBar = () => {
                     <nav className="second-navbar">
                         <ul>
                           {res&&res.category.map(item=>(
-                              <li key={item.id} data-tag={item.name}><a href={item.link}>{item.name}</a></li>
+                              <li key={item.id} data-tag={item.name}><Link to={item.link}>{item.name}</Link></li>
                           ))}
                             <li><input type="search" id="search-bar" placeholder="search" /></li>
                         </ul>

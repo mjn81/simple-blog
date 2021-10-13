@@ -3,6 +3,9 @@ import SidePost from "./SidePost";
 const SideContent = ({blogs}) => {
     const featpost = blogs.filter(item=>item.category === "Featured");
     const popost = blogs.filter(item=>item.category === "Popular");
+    popost.reverse();
+    featpost.reverse();
+
     return ( 
         
         <section className="side-area">
